@@ -15,14 +15,22 @@ public class RecipeScrapperTest extends Baseutils {
 	public void hyothyriodRecipeTest() throws Throwable
 	{
 	RecipePage recipepg=new RecipePage(driver);
-	landingpage.clickRecipeButton();
-	recipepg.HypothyroidLinkClick();
-	scrapperpg.scrapperReceipes(ConfigReader.hypothyrohref(),"Hypothyroidism", 2, 3,"Hypothyriod","AllergyHypothyriod");
+	//landingpage.clickRecipeButton();
+	//recipepg.HypothyroidLinkClick();
+	//scrapperpg.scrapperReceipes(ConfigReader.hypothyrohref(),"Hypothyroidism", 2, 3,"Hypothyriod","AllergyHypothyriod");
 	
 	
-	landingpage.clickRecipeButton();
-	recipepg.IndiandinnerHypothyroidLinkClick();
-	scrapperpg.scrapperReceipes(ConfigReader.hypothyroindiandinnerHref(),"Hypothyroidism", 2, 3,"HypothyriodIndianDinner","AllergyHypothyriodIndianDinner");
+	//landingpage.clickRecipeButton();
+	//recipepg.IndiandinnerHypothyroidLinkClick();
+	//scrapperpg.scrapperReceipes(ConfigReader.hypothyroindiandinnerHref(),"Hypothyroidism", 2, 3,"HypothyriodIndianDinner","AllergyHypothyriodIndianDinner");
+	
+	//landingpage.clickRecipeButton();		
+	//recipepg.SoupHypertensionLinkClick();
+    //scrapperpg.scrapperReceipes(ConfigReader.hypertensionsoupHref(),"Hypothyroidism", 2, 3,"HypothyriodSoup","AllergyHypothyriodSoup");
+    
+     landingpage.clickRecipeButton();	
+    recipepg.highfiberPCOSLinkClick();
+    scrapperpg.scrapperReceipes(ConfigReader.PCOShighfiberHref(),"Hypothyroidism", 2, 3,"HypothyriodHighfiber","AllergyHypothyriodHighfiber");
 	}
 	
 	@Test	
@@ -43,14 +51,14 @@ public class RecipeScrapperTest extends Baseutils {
     scrapperpg.scrapperReceipes(ConfigReader.pcoshref(),"PCOS", 6, 7,"PCOS","AllergyPCOS");
     
     
-    landingpage.clickRecipeButton();	
-    recipepg.highfiberPCOSLinkClick();
-    scrapperpg.scrapperReceipes(ConfigReader.PCOShighfiberHref(),"PCOS", 6, 7,"PCOSHighfiber","AllergyPCOSHighfiber");
+    //landingpage.clickRecipeButton();	
+    //recipepg.highfiberPCOSLinkClick();
+    //scrapperpg.scrapperReceipes(ConfigReader.PCOShighfiberHref(),"PCOS", 6, 7,"PCOSHighfiber","AllergyPCOSHighfiber");
     
     
-    landingpage.clickRecipeButton();	
-    recipepg.indiansaladPCOSLinkClick();
-    scrapperpg.scrapperReceipes(ConfigReader.PCOSindiansaladHref(),"PCOS", 6, 7,"PCOSSalad","AllergyPCOSSalad");
+    //landingpage.clickRecipeButton();	
+    //recipepg.indiansaladPCOSLinkClick();
+    //scrapperpg.scrapperReceipes(ConfigReader.PCOSindiansaladHref(),"PCOS", 6, 7,"PCOSSalad","AllergyPCOSSalad");
 	}
 @Test
 	public void HypertensionRecipeTest() throws Throwable

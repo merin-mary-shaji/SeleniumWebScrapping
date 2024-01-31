@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-19T01:48:38 GMT-05:00" name="Default suite" finished-at="2023-12-19T02:15:39 GMT-05:00" duration-ms="1621275">
+  <suite started-at="2023-12-19T14:24:58 CST" name="Default suite" finished-at="2023-12-19T17:42:43 CST" duration-ms="11865495">
     <groups>
     </groups>
-    <test started-at="2023-12-19T01:48:38 GMT-05:00" name="Default test" finished-at="2023-12-19T02:15:39 GMT-05:00" duration-ms="1621275">
+    <test started-at="2023-12-19T14:24:58 CST" name="Default test" finished-at="2023-12-19T17:42:43 CST" duration-ms="11865495">
       <class name="com.test.RecipeScrapperTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.RecipeScrapperTest@7ce69770]" started-at="2023-12-19T01:48:38 GMT-05:00" name="launchApplication" finished-at="2023-12-19T01:48:52 GMT-05:00" duration-ms="14046" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.RecipeScrapperTest@3c9754d8]" started-at="2023-12-19T14:24:58 CST" name="launchApplication" finished-at="2023-12-19T14:25:10 CST" duration-ms="12054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="HypertensionRecipeTest()[pri:0, instance:com.test.RecipeScrapperTest@7ce69770]" started-at="2023-12-19T01:48:52 GMT-05:00" name="HypertensionRecipeTest" finished-at="2023-12-19T02:15:38 GMT-05:00" duration-ms="1605941" status="PASS">
+        <test-method signature="hyothyriodRecipeTest()[pri:0, instance:com.test.RecipeScrapperTest@3c9754d8]" started-at="2023-12-19T14:25:10 CST" name="hyothyriodRecipeTest" finished-at="2023-12-19T17:42:43 CST" duration-ms="11853086" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HypertensionRecipeTest -->
-        <test-method is-config="true" signature="after()[pri:0, instance:com.test.RecipeScrapperTest@7ce69770]" started-at="2023-12-19T02:15:38 GMT-05:00" name="after" finished-at="2023-12-19T02:15:39 GMT-05:00" duration-ms="499" status="PASS">
+        </test-method> <!-- hyothyriodRecipeTest -->
+        <test-method is-config="true" signature="after()[pri:0, instance:com.test.RecipeScrapperTest@3c9754d8]" started-at="2023-12-19T17:42:43 CST" name="after" finished-at="2023-12-19T17:42:43 CST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

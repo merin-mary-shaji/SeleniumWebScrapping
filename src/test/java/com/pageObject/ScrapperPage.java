@@ -84,10 +84,15 @@ public class ScrapperPage {
 		System.out.println(pagenumber);
 		for (int p = 1; p<=pagenumber ; p++) {
 			System.out.println("Page:" + p);
+			try {
 			WebElement pageclick1 = driver.findElement(By.xpath(
 					"//div[@id='maincontent']/div/div[2]//div[@style=\"text-align:right;padding-bottom:15px;\"]/a[@href="
 							+ "\"" + pgcountDString + p + "\"" + "]"));
+			//Baseutils.explicit_wait(driver, pageclick1);
 			pageclick1.click();
+			}catch(org.openqa.selenium.NoSuchElementException e){
+	        	
+             }
 			for (int i = 0; i < recipecards.size(); i++) {
 				recipeName = (recipecards.get(i).getText()).toLowerCase();
 				System.out.println("recipe:" +recipeName);
@@ -95,6 +100,15 @@ public class ScrapperPage {
 				Baseutils.explicit_wait(driver, recipecards.get(i));
 				recipecards.get(i).click();
 				Baseutils.explicit_wait(driver, ingredientList.get(0));
+				try {
+					WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15));
+		       		 wait.until(ExpectedConditions.alertIsPresent());
+		 	        Alert alert = driver.switchTo().alert();
+		 	        String alertText = alert.getText();
+		 	        System.out.println("Alert data: " + alertText);
+		 	        alert.accept();
+		 	    } catch (Exception e) {  }
+				
 				recipeURL = driver.getCurrentUrl();
 				recipeingredient = Baseutils.getRecipeIngredientList();
 				allNutrientvalue = Baseutils.getNutrientvalues();
